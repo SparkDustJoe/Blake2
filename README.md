@@ -1,4 +1,4 @@
-# Blake2
+# Blake2 (DEPRECATED REPOSITORY, USE NEW BlakeManaged CODE INSTEAD, HAS BLAKE2 AND BLAKE3)
 A C# Port of Blake2 (this is mostly a fork of Christian Winnerlein's work / CodesInChaos)
 
 Includes Blake2b (64 bit) and Blake2s (32 bit)
