@@ -35,8 +35,8 @@ namespace Blake2bCSharp
             }
             else
             {
-                for (int i = 0; i < 16; i += 4)
-                    _m[i] = BytesToUInt64(block, start + i); //
+                for (int i = 0, buf_ptr = start; i < 16; i++, buf_ptr += 8)
+                    _m[i] = BytesToUInt64(block, buf_ptr); //
             }
 
             UInt64 m0 = _m[0];

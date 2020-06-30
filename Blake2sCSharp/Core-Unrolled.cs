@@ -35,8 +35,8 @@ namespace Blake2sCSharp
             }
             else
             {
-                for (int i = 0; i < 16; i += 4)
-                    _m[i] = BytesToUInt32(block, start + i); //
+                for (int i = 0, buf_ptr = start; i < 16; i++, buf_ptr += 4)
+                    _m[i] = BytesToUInt32(block, buf_ptr); //
             }
 
             UInt32 m0 = _m[0];
